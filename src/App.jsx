@@ -62,7 +62,7 @@ function App() {
 
 export default App 
 
-// user 
+
 
 export const ProtectedRoute = ({children}) => {
   const user = localStorage.getItem('user')
@@ -73,7 +73,6 @@ export const ProtectedRoute = ({children}) => {
   }
 }
 
-// admin 
 
 const ProtectedRouteForAdmin = ({children})=> {
   const admin = JSON.parse(localStorage.getItem('user'))
